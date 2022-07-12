@@ -15,7 +15,17 @@ Syntax highlighted code block
 ## Header 2
 ### Header 3
 
-- Bulleted
+const express = require('express');
+const router = express.Router();
+
+/* GET home page. */
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'Hello Git!' });
+});
+
+module.exports = router;
+
+- Bulleted 
 - List
 
 1. Numbered
